@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased;
+  background-color: #FDF6EC;
+  color: #2d3748;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF6EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E63946;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CC0000;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(230, 57, 70, 0.2);
+  color: #CC0000;
+}
